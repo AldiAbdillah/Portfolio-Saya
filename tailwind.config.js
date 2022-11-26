@@ -24,6 +24,15 @@ module.exports = {
       padding: "16px",
     },
     extend: {
+      keyframes: {
+        animation: {
+        'bounce': 'bounce 1s infinite',
+      },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-5%)' },
+          '50%': { transform: 'translateY(-0%)' },
+        }
+      },
       colors: {
         primary: "#3b82f6",
         secondary: "#b32b40",
