@@ -969,6 +969,10 @@ video {
   background-image: url('/dist/img/MyGallery/9.jpg');
 }
 
+.bg-\[url\(\'\/dist\/img\/MyGallery\/\.jpg\'\)\] {
+  background-image: url('/dist/img/MyGallery/.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -987,6 +991,11 @@ video {
 
 .fill-slate-600 {
   fill: #475569;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -1232,16 +1241,16 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
 }
 
 .ease-in-out {
@@ -1420,22 +1429,6 @@ body {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-5%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: translateY(-0%);
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.group:hover .group-hover\:animate-bounce {
-  animation: bounce 1s infinite;
 }
 
 .group:hover .group-hover\:fill-blue-600 {
